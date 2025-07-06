@@ -97,3 +97,74 @@
       </section>
 </body>
 </html>
+<nav class="blur-nav">
+    <div class="nav__logo">
+        <a href="#">Crumbel</a>
+    </div>
+    <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Order</a></li>
+        <li class="link"><a href="#">Locations</a></li>
+        <li class="link"><a href="#">Catering</a></li>
+        <li class="link"><a href="#">Gift Cards</a></li>
+    </ul>
+    <button class="btn">Order Now</button>
+</nav>
+
+<style>
+    .blur-nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        background-color: rgba(255, 165, 0, 0.5); /* Orange with transparency */
+        backdrop-filter: blur(12px); /* Stronger blur for better effect */
+        -webkit-backdrop-filter: blur(12px); /* Safari support */
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3); /* Orange tinted shadow */
+    }
+    
+    .nav__logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff; /* White text for contrast */
+        text-decoration: none;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav__links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+    
+    .nav__links a {
+        text-decoration: none;
+        color: #fff; /* White text */
+        font-weight: 600;
+        transition: all 0.3s;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav__links a:hover {
+        color: #ffd700; /* Gold hover effect */
+    }
+    
+    .btn {
+        padding: 0.6rem 1.8rem;
+        background-color: #fff;
+        color: #ff8c00; /* Orange text */
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 2px 8px rgba(255, 140, 0, 0.3);
+    }
+    
+    .btn:hover {
+        background-color: #ff8c00; /* Orange background */
+        color: #fff; /* White text */
+    }
+</style>
